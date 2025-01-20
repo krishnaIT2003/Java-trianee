@@ -13,12 +13,14 @@ class A{
 	
 }
 class B extends A{
-	
+	int age;
 }
 
 
 public class InheritanceExample {
 public static void main(String[] args) {
-	
+  B b=new B();
+  b.name ="krishna";
+  System.out.println(b.name);
 }
 }

@@ -1,6 +1,8 @@
 package cj7;
 
 import java.util.Comparator;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.TreeMap;
 
 public class TreeMapCompartorExample {
@@ -12,5 +14,20 @@ public static void main(String[] args) {
      map.put("Krishna", 15);
      map.put("Charlie", 35);
      System.out.println(map);
+     
+     
+     for(Map.Entry<String, Integer>entry:map.entrySet()) {
+    	 System.out.println("key: "+entry.getKey()+" value: "+entry.getValue());
+     }
+     
+     //STREAMS
+     map.forEach((n,v)->System.out.print(n+" "+v));
+     
+     //iterator
+     Iterator<Integer>it=map.values().iterator();
+ 	while(it.hasNext()) {
+ 		System.out.println(it.next());
+ 	}
+
 }
 }

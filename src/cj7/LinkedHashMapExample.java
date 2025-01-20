@@ -1,6 +1,7 @@
 package cj7;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class LinkedHashMapExample {
 public static void main(String[] args) {
@@ -15,6 +16,13 @@ public static void main(String[] args) {
     map.get("Alice");
     map.get("Charlie");
 
+    
+    
     System.out.println("LinkedHashMap with access order: " + map);	
+    
+    
+    for(Map.Entry<String, Integer>entry:map.entrySet()) {
+    	System.out.println("key: "+entry.getKey()+" value: "+entry.getValue());
+    }
 }
 }

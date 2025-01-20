@@ -7,5 +7,12 @@ public static void main(String[] args) {
 	b-=a;
 	System.out.println(b);
 	a+=b;
+	System.out.println(a);
+	a/=b;
+	System.out.println(a);
+	a*=b;
+	System.out.println(a);
+	a%=b;
+	System.out.println(a);
 }
 }
