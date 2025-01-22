@@ -18,7 +18,12 @@ System.out.println("Entries less than or equal to charlie: "+ map.headMap("prith
 System.out.println("entries greater than or equal to Bharath "+map.tailMap("krishna",true));
 System.out.println("submap  "+map.subMap("Bharath", "prithvi"));
 
-	
+
+
+System.out.println("higher key "+map.higherKey("Bharath"));
+System.out.println("last key "+map.lastKey());
+System.out.println("lower key "+map.lowerKey("prithvi"));
+	System.out.println(map.subMap("B", "t"));
 	
 }
 }

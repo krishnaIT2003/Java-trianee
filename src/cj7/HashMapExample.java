@@ -7,6 +7,7 @@ public class HashMapExample {
 public static void main(String[] args) {
 	HashMap<Integer, String>map=new HashMap<>();
 	map.put(null, "Empty");
+	map.put(9, "Ranjith");
 	map.put(1, "krishna");
 	map.put(2, "prithvi");
 	map.put(3, "bharath");
@@ -29,5 +30,6 @@ public static void main(String[] args) {
 	}
 	map.compute(2, (key,value)->value==null?"demo":value+" hi");
 	System.out.println(map);
+	System.out.println(map.compute(9, (k,v)->v.toUpperCase()));
 }
 }

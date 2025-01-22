@@ -15,6 +15,12 @@ public class ArrayListExample {
 		list.add(1);
 		list.add(5);
 		list.add(3);
+		list.add(4);
+		list.add(5);
+		list.add(6);
+		list.add(7);
+		list.add(8);
+		list.add(3);
 		System.out.println(list);
 		
 		
@@ -38,5 +44,15 @@ public class ArrayListExample {
 			System.out.println(it.next());
 		}
 
+		System.out.println("clone "+list.clone());
+		System.out.println(list.isEmpty());
+		System.out.println("removing value "+list.remove(3));
+		System.out.println(list.set(0, null));
+		System.out.println(list);
+		Object[] arr=list.toArray();
+		
+		list.spliterator().forEachRemaining(System.out::print);
+		
+		
 	}
 }
