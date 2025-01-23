@@ -5,18 +5,20 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
+import tasks.task6.EmployeeDb;
+
 public class DeserializaationExample {
 public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
-	Person p=null;
-	try(ObjectInputStream is=new ObjectInputStream(new FileInputStream("output.ser"))){
-		p=(Person)is.readObject();
+	EmployeeDb emp=null;
+	try(ObjectInputStream is=new ObjectInputStream(new FileInputStream("employee.ser"))){
+		emp=(EmployeeDb)is.readObject();
 		
 	}
 	catch(IOException e) {
 		System.out.println(e.getLocalizedMessage());
 	}
 	
-	System.out.println(p.name);
-	System.out.println(p.age);
+	System.out.println(emp.getEmp());
+	
 }
 }

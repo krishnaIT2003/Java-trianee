@@ -8,6 +8,7 @@ public class BufferedOutpuExample {
 public static void main(String[] args) {
 	 try (BufferedWriter bw = new BufferedWriter(new FileWriter("output.txt"))) {
          bw.write("This is a buffered writer example!");
+         bw.append("jhjhjh");
      } catch (IOException e) {
          e.printStackTrace();
      }
