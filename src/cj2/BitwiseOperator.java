@@ -2,8 +2,8 @@ package cj2;
 
 public class BitwiseOperator {
 public static void main(String[] args) {
-	int a=3;//011
-	int b=4;//100
+	int a=5;//011
+	int b=3;//100
 	//  OR operator
 	System.out.println(a|b);  //0111
 	
